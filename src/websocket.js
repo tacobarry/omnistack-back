@@ -10,8 +10,8 @@ exports.setupWebsocket = (server) => {
 
   io.on('connection', socket => {
     const { latitude, longitude, techs } = socket.handshake.query
-    // console.log(socket.id)
-    // console.log(socket.handshake.query)
+    console.log(socket.id)
+    console.log(socket.handshake.query)
 
     connections.push({
       id: socket.id,
